@@ -64,6 +64,7 @@ footer{
     list-style: none;
     display: flex;
     background-color:burlywood; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .f_left{
