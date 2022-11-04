@@ -1,0 +1,101 @@
+header{
+    background-image:url(./Bilder/IMG_3743.JPG);
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.icon{
+   float: left;
+   margin: 15px;
+}
+
+h1{
+color: cornflowerblue;
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    color: cadetblue;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3{
+    color: aqua;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color:beige;
+    margin: auto;
+    width: 800px;
+}
+
+video, iframe {
+    display: block;
+    margin: auto;
+}
+
+h4{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+    
+nav a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    margin-top: 3%;
+    
+}
+
+nav a:hover,a:active{
+    color: azure;
+    text-decoration: underline;
+}
+
+footer{
+    list-style: none;
+    display: flex;
+    background-color:burlywood; 
+}
+
+.f_left{
+    position: relative;
+    width: 33%;
+}
+
+.f_middle{
+    position: relative;
+    width: 33%;
+    
+}
+
+.f_right{
+    position: relative;
+    width: 33%;
+}
+
+.Nachricht{
+    height: 300px;
+
+}
+
+.senden{
+    width: 60px;
+}
+
+input, textarea {
+    background-color: grey;
+    width: 300px;
+    margin-left: 35%;
+}
+
+
+
