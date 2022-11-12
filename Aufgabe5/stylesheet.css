@@ -1,0 +1,152 @@
+header{
+    background-image:url(./Bilder/IMG_3743.JPG);
+    background-repeat: no-repeat;
+    height: 400px;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    0%{
+            background-image: url(../Aufgabe5/Bilder/Aufgabe5.jpg);
+        }
+    50%{
+            background-image: url(../Aufgabe5/Bilder/Aufgabe5_1.jpg);
+            
+        }
+    100%{
+            background-image: url(/Aufgabe5/Bilder/IMG_3743.JPG);
+    }
+   
+}
+.Banner{
+    transform: rotate(30deg);
+    position: fixed;
+    margin-left: 600px;
+    
+}
+
+.icon{
+   float: left;
+   margin: 15px;
+}
+
+h1{
+color: cornflowerblue;
+text-align: center;
+font-family:Inconsolata, monospace;
+}
+
+h2{
+    color: cadetblue;
+    text-align: left;
+    font-family: Inconsolata, monospace;
+}
+
+h3{
+    color: aqua;
+    text-align: center;
+    font-family: Inconsolata, monospace;
+}
+body{
+    background-color:beige;
+    margin: auto;
+    width: 800px;
+    font-family:Inconsolata, monospace ;
+}
+
+video, iframe {
+    display: block;
+    margin: auto;
+}
+
+h4{
+    font-family: Inconsolata, monospace;
+}
+
+p{
+    font-family: Inconsolata, monospace;
+}
+    
+nav a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: Inconsolata, monospace;
+    float: right;
+    margin-top: 3%;
+    
+}
+
+nav a:hover,a:active{
+    color: azure;
+    text-decoration: underline;
+}
+
+footer{
+    list-style: none;
+    display: flex;
+    background-color:burlywood; 
+    font-family: Inconsolata, monospace;
+}
+
+.f_left{
+    position: relative;
+    width: 33%;
+}
+
+.f_middle{
+    position: relative;
+    width: 33%;  
+}
+
+.f_middle a{
+    opacity: 0.5;
+}
+
+.f_right{
+    position: relative;
+    width: 33%;
+}
+
+.Nachricht{
+    height: 300px;
+
+}
+
+.senden{
+    width: 60px;
+}
+
+input, textarea {
+    background-color: grey;
+    width: 300px;
+    margin-left: 35%;
+}
+
+.picture img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.picture img{
+    padding: 1%;
+    opacity: 0.5;
+}
+
+.f_middle a:hover{
+    opacity: 1;
+}
+
+   
+
+
+
+
+
