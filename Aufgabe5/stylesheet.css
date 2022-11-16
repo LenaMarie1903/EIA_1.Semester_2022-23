@@ -14,21 +14,22 @@ header{
 }
 @keyframes animate{
     0%{
-            background-image: url(../Aufgabe5/Bilder/Aufgabe5.jpg);
+            background-image: url("../Aufgabe5/Bilder/Aufgabe5.jpg");
         }
     50%{
-            background-image: url(../Aufgabe5/Bilder/Aufgabe5_1.jpg);
+            background-image: url("../Aufgabe5/Bilder/Aufgabe5_1.jpg");
             
         }
     100%{
-            background-image: url(/Aufgabe5/Bilder/IMG_3743.JPG);
+            background-image: url("../Aufgabe5/Bilder/IMG_3743.JPG");
     }
    
 }
 .Banner{
     transform: rotate(30deg);
     position: fixed;
-    margin-left: 600px;
+    right: -90px;
+    top: 10px;
     
 }
 
