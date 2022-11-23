@@ -1,60 +1,43 @@
 
 let Deutschland: number=83200000;
-console.log(Deutschland);
-let Text_Deutschland: string= "Die Einwohnerzahl von Deutschland beträgt 83200000 Millionen im Jahre 2022";
-console.log(Text_Deutschland);
+console.log(" Die Einwohnerzahl von Deutschland im Jahre 2022 bträgt " + Deutschland + " Einwohner. ");
 
 let Deutschland2060: number=81800000;
-console.log(Deutschland2060);
-let Text_Deutschland2060: string= "Die Einwohnerzahl von Deutschland wird betragen 81800000 Millionen im Jahre 2060";
-console.log(Text_Deutschland2060);
+console.log(" Die Einwohnerzahl von Deutschland im Jahre 2060 bträgt " + Deutschland2060 + "Einwohner. ");
 
-var result:number=Deutschland-Deutschland2060;
-alert(result);
-
+let ProzentD = (1-Deutschland/Deutschland2060)*100;
+console.log("Die Einwohnerzahl in Deutschland wird bis 2060 um " + ProzentD + "% sinken");
 
 
 
 let Frankreich: number=67800000;
-console.log(Frankreich);
-let Text_Frankreich: string= "Die Einwohnerzahl von Frankreich beträgt 67800000 Millionen im Jahre 2022";
-console.log(Text_Frankreich);
+console.log(" Die Einwohnerzahl von Frankreich im Jahre 2022 bträgt " + Frankreich + " Einwohner. ");
 
 let Frankreich2060: number=69700000;
-console.log(Frankreich2060);
-let Text_Frankreich2060: string= "Die Einwohnerzahl von Frankreich wird betragen 69700000 Millionen im Jahre 2060";
-console.log(Text_Frankreich2060);
+console.log(" Die Einwohnerzahl von Frankreich im Jahre 2060 bträgt " + Frankreich2060+ " Einwohner. ");
 
-var result:number=Frankreich-Frankreich2060;
-alert(result);
+let ProzentF = (1-Frankreich/Frankreich2060)*100; 
+console.log("Die Einwohnerzahl in Frankreich wird bis 2060 um " + ProzentF + "% steigen");
+
 
 
 
 let Italien: number=59000000;
-console.log(Italien);
-let Text_Italien: string= "Die Einwohnerzahl von Italien beträgt 59000000 Millionen im Jahre 2022";
-console.log(Text_Italien);
+console.log(" Die Einwohnerzahl von Italien im Jahre 2022 bträgt " + Italien + " Einwohner. ");
 
 let Italien2060: number=56000000;
-console.log(Italien2060);
-let Text_Italien2060: string= "Die Einwohnerzahl von Italien wird betragen 56000000 Millionen im Jahre 2060";
-console.log(Text_Italien2060);
+console.log(" Die Einwohnerzahl von Italien im Jahre 2060 bträgt " + Italien2060+ " Einwohner. ");
 
-var result:number=Italien-Italien2060;
-alert(result);
+let ProzentIT = (1-Italien/Italien2060)*100;
+console.log("Die Einwohnerzahl in Italien wird bis 2060 um " + ProzentIT + "% sinken");
 
 
 
 let Luxenburg: number=600000;
-console.log(Luxenburg)
-let Text_Luxenburg: string= "Die Einwohnerzahl von Luxenburg beträgt 600000  im Jahre 2022";
-console.log(Text_Luxenburg);
+console.log(" Die Einwohnerzahl von Luxenburg im Jahre 2022 bträgt " + Luxenburg+ " Einwohner. ");
 
 let Luxenburg2060: number=800000;
-console.log(Luxenburg2060);
-let Text_Luxenburg2060: string= "Die Einwohnerzahl von Italien wird betragen 800000  im Jahre 2060";
-console.log(Text_Luxenburg2060);
+console.log(" Die Einwohnerzahl von Luxenburg im Jahre 2060 bträgt " + Luxenburg2060+ " Einwohner. ");
 
-var result:number=Luxenburg-Luxenburg2060;
-alert(result);
+console.log("Die Einwohnerzahl von Luxenburg wird bis 2060 um " + (1-Luxenburg/Luxenburg2060)*100 + "% steigen");
 
