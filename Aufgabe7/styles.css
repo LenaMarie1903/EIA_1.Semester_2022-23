@@ -17,6 +17,56 @@ body {
     opacity: 1;
 }
 
+.wrapper1 {
+    display: inline-block;
+    opacity: .5;
+    transition: all .3s;
+}
+
+.wrapper1:hover, .wrapper.active {
+    transform: scale(0.9);
+    opacity: 1;
+    background-image: url(/Aufgabe7/Deutschland_Flagge.png);
+}
+
+.wrapper2 {
+    display: inline-block;
+    opacity: .5;
+    transition: all .3s;
+}
+
+.wrapper2:hover, .wrapper.active {
+    transform: scale(0.9);
+    opacity: 1;
+    background-image: url(/Aufgabe7/Flagge_Frankreich.jpg);
+}
+
+.wrapper3 {
+    display: inline-block;
+    opacity: .5;
+    transition: all .3s;
+}
+
+.wrapper3:hover, .wrapper.active {
+    transform: scale(0.9);
+    opacity: 1;
+    background-image: url(/Aufgabe7/Italien_Flagge.jpg);
+}
+
+.wrapper4 {
+    display: inline-block;
+    opacity: .5;
+    transition: all .3s;
+}
+
+.wrapper4:hover, .wrapper.active {
+    transform: scale(0.9);
+    opacity: 1;
+    background-image: url(/Aufgabe7/Flagge_Luxemburg.jpg);
+    
+}
+
+
 .row {
     display: flex;
     justify-content: space-around;
