@@ -26,7 +26,7 @@ body {
 .wrapper1:hover, .wrapper.active {
     transform: scale(0.9);
     opacity: 1;
-    background-image: url(/Aufgabe7/Deutschland_Flagge.png);
+    background-image: url(/Aufgabe7/images/Deutschland_Flagge.png);
 }
 
 .wrapper2 {
@@ -38,7 +38,7 @@ body {
 .wrapper2:hover, .wrapper.active {
     transform: scale(0.9);
     opacity: 1;
-    background-image: url(/Aufgabe7/Flagge_Frankreich.jpg);
+    background-image: url(/Aufgabe7/images/Flagge_Frankreich.jpg);
 }
 
 .wrapper3 {
@@ -50,7 +50,7 @@ body {
 .wrapper3:hover, .wrapper.active {
     transform: scale(0.9);
     opacity: 1;
-    background-image: url(/Aufgabe7/Italien_Flagge.jpg);
+    background-image: url(/Aufgabe7/images/Italien_Flagge.jpg);
 }
 
 .wrapper4 {
@@ -62,7 +62,7 @@ body {
 .wrapper4:hover, .wrapper.active {
     transform: scale(0.9);
     opacity: 1;
-    background-image: url(/Aufgabe7/Flagge_Luxemburg.jpg);
+    background-image: url(/Aufgabe7/images/Flagge_Luxemburg.jpg);
     
 }
 
