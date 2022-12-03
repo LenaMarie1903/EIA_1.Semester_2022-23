@@ -1,0 +1,95 @@
+.button{
+    width: 150px;
+    height: 150px;
+    
+
+}
+#playbutton{
+    margin-left: 58%;
+}
+
+body{
+    background-color: black;
+}
+
+
+#top{
+    margin-top: 5%;
+
+    position: relative;
+   left: 30%;
+    
+}
+
+#middle{
+    margin-top: 5%;
+    position: relative;
+    left: 30%;
+    
+}
+
+#down{
+    margin-top: 5%;
+    position: relative;
+    left: 30%;
+}
+
+
+#button1{
+    position: relative;
+    left: 10%;
+    background-color: #e011e0;
+}
+#button2{
+    position: relative;
+    left: 15%;
+    background-color: #e011e0;
+}
+
+#button3{
+    position: relative;
+    left: 20%;
+    background-color: #e011e0;
+    
+
+}
+
+
+
+#button4{
+    position: relative;
+    left: 10%;
+    background-color: #ADD8E6;
+}
+
+#button5{
+    position: relative;
+    left: 15%;
+    background-color: #ADD8E6;
+}
+
+#button6{
+    position: relative;
+    left: 20%;
+    background-color: #ADD8E6;
+}
+
+
+
+#button7{
+    position: relative;
+    left: 10%;
+    background-color: #ff781f;
+}
+
+#button8{
+    position: relative;
+    left: 15%;
+    background-color: #ff781f;
+}
+
+#button9{
+    position: relative;
+    left: 20%;
+    background-color: #ff781f;
+}
