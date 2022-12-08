@@ -1,4 +1,5 @@
-/*let audio1: HTMLAudioElement = new Audio('./DrumPad/A.mp3')
+namespace Aufgabe9 {
+let audio1: HTMLAudioElement = new Audio('./DrumPad/A.mp3')
 const audio2: HTMLAudioElement = new Audio('./DrumPad/laugh-1.mp3')
 const audio3: HTMLAudioElement = new Audio('./DrumPad/C.mp3')
 const audio4: HTMLAudioElement = new Audio('./DrumPad/laugh-2.mp3')
@@ -21,23 +22,43 @@ document.querySelector("#button9").addEventListener('click', function () { plays
 
 
 
-
-
 function playsample(var3) {
     var3.play()
 
 }
 
-var audios: HTMLAudioElement[] = [audio5, audio8, audio9]
+var audios1: HTMLAudioElement[] = [audio1, audio2, audio3, audio4,audio5, audio6, audio7, audio8, audio9];
+var audios: HTMLAudioElement[] = [ audio2, audio5, audio6,  audio8, ];
 
 let counter = 0;
-document.querySelector("#playbutton").addEventListener('click', function () {
-    setInterval(function () {
-        audios[counter].play();
-       if (counter==2) {
-        counter=0
-       } else {counter++}
-    }, 500);
+
+let play = document.querySelector("#play");
+let stope = document.querySelector("#stop");
+let myInterval 
+
+document.querySelector("#play").addEventListener('click', function () {
+   play.classList.add('hidden');
+   stope.classList.remove('hidden');
+    myInterval = setInterval(() =>{
+    playsample(audios[counter]);
+   if (counter==2) {
+    counter=0
+   } else {counter++}
+},500);
+}) 
+ document.querySelector("#stop").addEventListener('click',function(){
+    stope.classList.add('hidden');
+    play.classList.remove('hidden');
+    clearInterval(myInterval)
+ })
+ document.querySelector("#remix").addEventListener('click',function(){
+    audios= []; while( audios.length<3)
+    {
+        
+        let n =Math.floor(Math.random()*9)
+        audios.push(audios1[n])
+    }
+    
+ })
+
 }
-) */ 
-//# sourceMappingURL=script.js.map

@@ -1,4 +1,4 @@
-let audio1: HTMLAudioElement = new Audio('./DrumPad/A.mp3')
+/*let audio1: HTMLAudioElement = new Audio('./DrumPad/A.mp3')
 const audio2: HTMLAudioElement = new Audio('./DrumPad/laugh-1.mp3')
 const audio3: HTMLAudioElement = new Audio('./DrumPad/C.mp3')
 const audio4: HTMLAudioElement = new Audio('./DrumPad/laugh-2.mp3')
@@ -39,4 +39,4 @@ document.querySelector("#playbutton").addEventListener('click', function () {
        } else {counter++}
     }, 500);
 }
-)
+) */
