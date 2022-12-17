@@ -6,3 +6,7 @@
 h1{
     margin-left: 30%;
 }
+
+.hidden{
+    display: none !important;
+}

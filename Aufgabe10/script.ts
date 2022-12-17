@@ -7,20 +7,33 @@ namespace Aufgabe10 {
         trashtone: string;
         check: string;
     }
+    let ToDOListe : ToDO [] = [];
 
-    function create_todo() {
+   /*Neu*/
+    ToDOListe({})
+    
+    for(let index:number=0; index<ToDOListe.length; index++)
+
+   
+
+
+    /* 0ld */  
+
+    function create_todo() {   /*ToDOListe.push({task:addp.value.toString; trashtone:String; newCheck: String;})*/
         const wrapper: HTMLElement= <HTMLElement> document.querySelector(".wrapper") ;
         const newDiv= document.createElement ("div");
         newDiv.className= "myClass"
-      console.log('Hallo')
         
-       let addp : HTMLInputElement=  document.querySelector(".add");
+       let addp : HTMLInputElement=  document.querySelector("input");
        if (addp.value != "")
-       {const newP= document.createElement ("p")}
-       newP.innerHTML= addp.value
-        console.log(addp)
+      {const newP= document.createElement ("p")
+       newP.innerHTML= addp.value 
+       newDiv.appendChild(newP);
+    }
+        
+        
         const newTrash= document.createElement("i")
-        newTrash.className="fa-regular fa-trash-can"
+        newTrash.className="fa fa-trash-alt"
         
 
         const newCheck = document.createElement ("span");
@@ -28,15 +41,13 @@ namespace Aufgabe10 {
 
         newDiv.appendChild(newCheck);
         newDiv.appendChild(newTrash);
-        newDiv.appendChild(newP);
+      
         
         wrapper.appendChild(newDiv);
-      console.log(wrapper)
-        console.log(newDiv,newCheck,newP)
+      
 
-    }
+    } 
 
-    
 
 
     document.querySelector(".add").addEventListener('keypress', function (e: KeyboardEvent) {
@@ -49,12 +60,21 @@ namespace Aufgabe10 {
 })
 
 
-
+/*let remove = document.querySelector("#trash");*/
 
 
     document.querySelector("#trash").addEventListener('click', function () {
 
+        wrapper.removeChild('newDiv')
+
+      /*  remove.classList.add('hidden'); */
+
     })
+
+    let Todo_total: number=100000
+
+    for(let index=0; index <=Todo_total;index++)
+    {console.log("Hallo"+ index)};
 
 
 
