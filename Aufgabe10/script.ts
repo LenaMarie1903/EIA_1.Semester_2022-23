@@ -10,13 +10,13 @@ namespace Aufgabe10 {
     let ToDOListe : ToDO [] = [];
 
    /*Neu*/
-    ToDOListe({})
+   // ToDOListe({})
     
-    for(let index:number=0; index<ToDOListe.length; index++)
+    //for(let index:number=0; index<ToDOListe.length; index++)
 
    
 
-
+let counter = 0; 
     /* 0ld */  
 
     function create_todo() {   /*ToDOListe.push({task:addp.value.toString; trashtone:String; newCheck: String;})*/
@@ -44,15 +44,23 @@ namespace Aufgabe10 {
       
         
         wrapper.appendChild(newDiv);
-      
 
+        
+      
+     newTrash.addEventListener("click", function(){
+        wrapper.removeChild(newDiv);
+        counter--;
+        document.querySelector('#total').innerHTML = String(counter)
+     })
     } 
 
 
 
     document.querySelector(".add").addEventListener('keypress', function (e: KeyboardEvent) {
         if (e.key === 'Enter') {
-            create_todo()
+            create_todo();
+            counter++; 
+            document.querySelector('#total').innerHTML = String(counter)
            
     
         }
@@ -63,18 +71,9 @@ namespace Aufgabe10 {
 /*let remove = document.querySelector("#trash");*/
 
 
-    document.querySelector("#trash").addEventListener('click', function () {
+    
 
-        wrapper.removeChild('newDiv')
-
-      /*  remove.classList.add('hidden'); */
-
-    })
-
-    let Todo_total: number=100000
-
-    for(let index=0; index <=Todo_total;index++)
-    {console.log("Hallo"+ index)};
+   
 
 
 
