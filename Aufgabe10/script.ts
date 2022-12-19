@@ -3,37 +3,33 @@ namespace Aufgabe10 {
 
 
     interface ToDO {
-        check: boolean;
         task: string;
-        trashtone: boolean;
+        trashtone: string;
+        check: string;
     }
     let ToDOListe : ToDO [] = [];
 
    /*Neu*/
-   /* ToDOListe({})*/
+    ToDOListe({})
     
-    //for(let index:number=0; index<ToDOListe.length; index++)
+    for(let index:number=0; index<ToDOListe.length; index++)
 
+   
 
 
     /* 0ld */  
 
-    function create_todo() { /*ToDOListe.push({task:addp.value.toString; trashtone:String; newCheck: String;})*/
+    function create_todo() {   /*ToDOListe.push({task:addp.value.toString; trashtone:String; newCheck: String;})*/
         const wrapper: HTMLElement= <HTMLElement> document.querySelector(".wrapper") ;
-       
         const newDiv= document.createElement ("div");
         newDiv.className= "myClass"
-
-        for(let index:number=0; index<ToDOListe.length; index++) {
-
+        
        let addp : HTMLInputElement=  document.querySelector("input");
-       const newP; 
        if (addp.value != "")
-      {newP= document.createElement ("p")
+      {const newP= document.createElement ("p")
        newP.innerHTML= addp.value 
        newDiv.appendChild(newP);
-        }
-    
+    }
         
         
         const newTrash= document.createElement("i")
@@ -48,19 +44,11 @@ namespace Aufgabe10 {
       
         
         wrapper.appendChild(newDiv);
+      
+
+    } 
 
 
-       
-        
-    }
-    ToDOListe.push(newCheck,newP,newTrash); 
-    } /*}*/
-
-    function delete_todo(){
-        ToDOListe.splice(index, 1)
-    }
-
-newDiv.quaeryselectore 
 
     document.querySelector(".add").addEventListener('keypress', function (e: KeyboardEvent) {
         if (e.key === 'Enter') {
