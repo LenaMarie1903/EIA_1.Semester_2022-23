@@ -2,16 +2,18 @@ var Aufgabe10;
 (function (Aufgabe10) {
     let ToDOListe = [];
     /*Neu*/
-    ToDOListe({});
-    for (let index = 0; index < ToDOListe.length; index++)
-        /* 0ld */
-        function create_todo() {
-            const wrapper = document.querySelector(".wrapper");
-            const newDiv = document.createElement("div");
-            newDiv.className = "myClass";
+    /* ToDOListe({})*/
+    //for(let index:number=0; index<ToDOListe.length; index++)
+    /* 0ld */
+    function create_todo() {
+        const wrapper = document.querySelector(".wrapper");
+        const newDiv = document.createElement("div");
+        newDiv.className = "myClass";
+        for (let index = 0; index < ToDOListe.length; index++) {
             let addp = document.querySelector("input");
+            const newP;
             if (addp.value != "") {
-                const newP = document.createElement("p");
+                newP = document.createElement("p");
                 newP.innerHTML = addp.value;
                 newDiv.appendChild(newP);
             }
@@ -23,6 +25,12 @@ var Aufgabe10;
             newDiv.appendChild(newTrash);
             wrapper.appendChild(newDiv);
         }
+        ToDOListe.push(newCheck, newP, newTrash);
+    } /*}*/
+    function delete_todo() {
+        ToDOListe.splice(index, 1);
+    }
+    newDiv.quaeryselectore;
     document.querySelector(".add").addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             create_todo();
