@@ -23,27 +23,42 @@ let counter = 0;
         const wrapper: HTMLElement= <HTMLElement> document.querySelector(".wrapper") ;
         const newDiv= document.createElement ("div");
         newDiv.className= "myClass"
+
+        const newTrash= document.createElement("i"); 
         
        let addp : HTMLInputElement=  document.querySelector("input");
        if (addp.value != "")
-      {const newP= document.createElement ("p")
-       newP.innerHTML= addp.value 
+      {const newP= document.createElement ("p"); 
+       newP.innerHTML= addp.value ;
        newDiv.appendChild(newP);
+
+       newTrash.className="fa fa-trash-alt";
+
+       const newCheck = document.createElement ("span");
+       newCheck.innerHTML=' <input type="checkbox"> '
+
+       newDiv.appendChild(newCheck);
+       newDiv.appendChild(newTrash);
+     
+       wrapper.appendChild(newDiv);
+    }
+    else{
+        alert('please add a task');
+        return; 
     }
         
         
-        const newTrash= document.createElement("i")
-        newTrash.className="fa fa-trash-alt"
+        /*const newTrash= document.createElement("i")  */
+       /* newTrash.className="fa fa-trash-alt"*/
         
 
-        const newCheck = document.createElement ("span");
+        /*const newCheck = document.createElement ("span");
         newCheck.innerHTML=' <input type="checkbox"> '
 
         newDiv.appendChild(newCheck);
         newDiv.appendChild(newTrash);
       
-        
-        wrapper.appendChild(newDiv);
+        wrapper.appendChild(newDiv);*/
 
         
       
@@ -52,6 +67,8 @@ let counter = 0;
         counter--;
         document.querySelector('#total').innerHTML = String(counter)
      })
+     counter++; 
+     document.querySelector('#total').innerHTML = String(counter)
     } 
 
 
@@ -59,8 +76,8 @@ let counter = 0;
     document.querySelector(".add").addEventListener('keypress', function (e: KeyboardEvent) {
         if (e.key === 'Enter') {
             create_todo();
-            counter++; 
-            document.querySelector('#total').innerHTML = String(counter)
+            /*counter++; 
+            document.querySelector('#total').innerHTML = String(counter)*/
            
     
         }
